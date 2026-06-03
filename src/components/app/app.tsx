@@ -28,7 +28,7 @@ export const App = () => {
       style={
         {
           '--font-family': appliedStyles.fontFamilyOption.value,
-         // '--font-size': appliedStyles.fontSizeOption.value,
+          '--font-size': appliedStyles.fontSizeOption.value,
           '--font-color': appliedStyles.fontColor.value,
           '--container-width': appliedStyles.contentWidth.value,
           '--bg-color': appliedStyles.backgroundColor.value,
