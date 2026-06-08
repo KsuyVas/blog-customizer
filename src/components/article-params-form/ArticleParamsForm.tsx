@@ -4,6 +4,8 @@ import { ArrowButton } from 'src/ui/arrow-button';
 import { Button } from 'src/ui/button';
 import { Select } from 'src/ui/select';
 import { RadioGroup } from 'src/ui/radio-group';
+import { Text } from 'src/ui/text';
+import { Separator } from 'src/ui/separator';
 
 import {
 	fontFamilyOptions,
@@ -72,6 +74,9 @@ export const ArticleParamsForm = ({
 				ref={sidebarRef}
 				className={clsx(styles.container, { [styles.container_open]: isOpen })}>
 				<form className={styles.form} onSubmit={handleSubmit}>
+					<Text as='h2' size={31} weight={800} uppercase>
+						ЗАДАЙТЕ ПАРАМЕТРЫ
+					</Text>
 					<Select
 						title='Шрифт'
 						options={fontFamilyOptions}
@@ -91,6 +96,7 @@ export const ArticleParamsForm = ({
 						selected={formStyles.fontColor}
 						onChange={(option) => handleStyleChange('fontColor', option)}
 					/>
+					<Separator />
 					<Select
 						title='Цвет фона'
 						options={backgroundColors}
